@@ -1,0 +1,1570 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Natsuki Rem"
+    </assembly>
+    <members>
+        <member name="F:HeapDataT.CurrentHeapSize">
+            <summary>Фактичне використання пам'яті кучею</summary>
+        </member>
+        <member name="F:HeapDataT.AllocatedMemBlksCount">
+            <summary>Поточна кількість виділених блоків</summary>
+        </member>
+        <member name="F:HeapDataT.AllocatedMemory">
+            <summary>Поточне використання кучі</summary>
+        </member>
+        <member name="F:HeapDataT.HeapHandle">
+            <summary>Дескриптор кучі</summary>
+        </member>
+        <member name="T:HeapDataT">
+            <summary>Інформація про кучі</summary>
+        </member>
+        <member name="P:Rem.Processing.CreatedCount">
+            <summary>
+Властивість CreatedCount
+</summary>
+        </member>
+        <member name="M:Rem.Processing.GetCreatedCount">
+            <summary>
+Гетер поля
+</summary>
+            <returns>Поточне значення</returns>
+        </member>
+        <member name="P:Rem.Processing.RemovedCount">
+            <summary>
+Властивість RemovedCount
+</summary>
+        </member>
+        <member name="M:Rem.Processing.GetRemovedCount">
+            <summary>
+Гетер поля RemovedCount з значення This-&gt;sharedData.removedCount
+</summary>
+            <returns>Поточне значення</returns>
+        </member>
+        <member name="F:ExceptionsHeapT.CurrentHeapSize">
+            <summary>Фактичне використання пам'яті кучею</summary>
+        </member>
+        <member name="F:ExceptionsHeapT.AllocatedMemBlksCount">
+            <summary>Поточна кількість виділених блоків</summary>
+        </member>
+        <member name="F:ExceptionsHeapT.AllocatedMemory">
+            <summary>Поточне використання кучі</summary>
+        </member>
+        <member name="F:ExceptionsHeapT.HeapHandle">
+            <summary>Дескриптор кучі</summary>
+        </member>
+        <member name="T:ExceptionsHeapT">
+            <summary>Інформація про кучу помилок</summary>
+        </member>
+        <member name="T:Rem.Core.TypeTraits.Types.ENativeTypes">
+            <summary>Типи Native типів</summary>
+        </member>
+        <member name="T:Rem.Core.TypeTraits.Types.EDataClasses">
+            <summary>Типи даних</summary>
+        </member>
+        <member name="T:Rem.Core.NewCTTI.TypeTraits.EType">
+            <summary>Перелік категорій типів</summary>
+        </member>
+        <member name="P:Rem.Core.Containers.Dynamic.Type">
+            <summary>
+Тип кортежу пакета які на даний момент містить об'єкт
+</summary>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.GetVariableType">
+            <summary>
+Вертає тип кортежу пакета які на даний момент містить об'єкт
+</summary>
+            <returns />
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.Dispose">
+            <summary>
+Звільнення ресурсів
+</summary>
+        </member>
+        <member name="F:Rem.Core.Containers.Dynamic.This">
+            <summary>
+Покажчик на дані об'єкта
+</summary>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.Data.#ctor(Rem.Core.Containers.Dynamic.IDynamicImpl*)">
+            <summary>
+Конструктор з інтерфейсу контейнера пакету даних
+</summary>
+            <param name="pack">Покажчик на інтерфейс контейнера пакету</param>
+            <returns />
+        </member>
+        <member name="F:Rem.Core.Containers.Dynamic.Data.pack">
+            <summary>
+Покажчик на інтерфейс контейнер пакету
+</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.Dynamic.Data">
+            <summary>
+Контейнер даних даного об'єкту
+</summary>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.IDynamicImpl.Dispose">
+            <summary>
+Деструктор
+</summary>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.IDynamicImpl.GetType">
+            <summary>
+Вертає тип кортежу який містить об'єкт
+</summary>
+            <returns>RTTI TypeInfo</returns>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.IDynamicImpl.GetVariablePackRaw">
+            <summary>
+Покажчик на пакет змінних
+</summary>
+            <returns>Вертає сирий покажчик</returns>
+        </member>
+        <member name="M:Rem.Core.Containers.Dynamic.IDynamicImpl.GetVariablesPackTypeInfo">
+            <summary>
+RTTI інформація про тип кортежу
+</summary>
+            <returns>RTTI TypeInfo</returns>
+        </member>
+        <member name="T:Rem.Core.Containers.Dynamic.IDynamicImpl">
+            <summary>
+Інтерфейс динамічного типу
+</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.Dynamic">
+            <summary>
+Динамічний об'єкт, тип даних відомий при виконанні, містить кортеж змінних
+</summary>
+        </member>
+        <member name="M:Rem.Core.toCoreLog(Rem.Core.Containers.BaseArray&lt;Rem.Core.Memory.Heap,Rem.Core.BaseString&lt;Rem.Core.Memory.ExceptionHeap&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Вивід в логи складеного повідомлення в логи, кожен елемент масиву окремий рядок</summary>
+            <param name="lines">Список рядків</param>
+            <returns>
+                <c>True</c> якщо запис в логи було проведено успішно</returns>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.Name">
+            <summary>Ім'я пула задач</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.TaskCount">
+            <summary>Кількість задач у пулі</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.RefCount">
+            <summary>Лічильник силок</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.cleanupData">
+            <summary>Настройка очищення задач</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.env">
+            <summary>Настройки середовищп для пула потоків</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.TaskSheduler.Data.pool">
+            <summary>Керуюча структура пула потоків</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.AlredyExecute.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.AlredyExecute.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exeptions.AlredyExecute">
+            <summary>Делегат в процесі виконання</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.TryReStartDelegate.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.TryReStartDelegate.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Генерація помилки спроби повторно запусти вже виконаний делегат або який виконується зараз</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exeptions.TryReStartDelegate">
+            <summary>Спроба повторно запусти вже виконаний делегат або який виконується зараз</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.CantGetResultNotInvokedFunction.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exeptions.CantGetResultNotInvokedFunction.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Генерація помилки спроби отримати результат не виконаної ще функції</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exeptions.CantGetResultNotInvokedFunction">
+            <summary>Спроба отримати результат не виконаної ще функції</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Reset">
+            <summary>Виставити false на подію</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Set">
+            <summary>Виставити true на подію</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Signale">
+            <summary>Подати імпульс на подію</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Wait(System.UInt64)">
+            <summary>Очікування з таймаутом</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Wait">
+            <summary>Очікування на подію</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.#ctor(Rem.Core.BaseString&lt;Rem.Core.Memory.Heap&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean)">
+            <summary>Конструктор з оптимізованою передачею імені об'єкта</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.#ctor(Rem.Core.BaseString&lt;Rem.Core.Memory.Heap&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean)">
+            <summary>Конструктор з іменем об'єкта</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.#ctor(System.Boolean)">
+            <summary>Конструктор</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.Dispose">
+            <summary>Знищення останнього елемента</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.Event.data">
+            <summary>Дані об'єкту події</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.event_data.#ctor(System.Boolean,Rem.Core.BaseString&lt;Rem.Core.Memory.Heap&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Конструктор з оптимізована отриманням дескриптора</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.Event.event_data.#ctor(System.Boolean,Rem.Core.BaseString&lt;Rem.Core.Memory.Heap&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Конструктор з отриманням дескриптора</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.Event.event_data.Name">
+            <summary>Ім'я обєкта події в об'єктній системі NT, якщо немає то рядок пустий</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.Event.event_data.RefCount">
+            <summary>Кількість силок на об'єкт</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.Event.event_data.handle">
+            <summary>Дескриптор</summary>
+        </member>
+        <member name="F:Rem.Core.Threading.Event.event_data.IsManualReset">
+            <summary>Тип</summary>
+        </member>
+        <member name="T:Rem.Core.Threading.Event.event_data">
+            <summary>Дані події</summary>
+        </member>
+        <member name="T:Rem.Core.Threading.Event">
+            <summary>Подія NT
+<para>Об'єкт синхронізації потоків</para></summary>
+        </member>
+        <member name="M:Rem.Core.Threading.DedlockExpected.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.DedlockExpected.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Threading.DedlockExpected">
+            <summary>Взаємне блокування</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.ThreadableAlredyStarted.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.ThreadableAlredyStarted.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Threading.ThreadableAlredyStarted">
+            <summary>Запуск запущеного об'єкта</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.InvalidThreadObj.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.InvalidThreadObj.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Threading.InvalidThreadObj">
+            <summary>Не валідний об'єкт потоку</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.InvalidThread.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Threading.InvalidThread.TID">
+            <summary>ID не існуючого потоку</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.InvalidThread.GetTID">
+            <summary>Вертаж ID неіснуючого потку</summary>
+        </member>
+        <member name="M:Rem.Core.Threading.InvalidThread.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="TID">Id не існуючого потоку</param>
+        </member>
+        <member name="F:Rem.Core.Threading.InvalidThread.tid">
+            <summary>ID не існуючого потоку</summary>
+        </member>
+        <member name="T:Rem.Core.Threading.InvalidThread">
+            <summary>Неіснуючий потік або він не є керований через Core</summary>
+        </member>
+        <member name="T:Rem.Core.Threading.SRWLock">
+            <summary>Примітив синхронізації який дозволяє одночасне читання і есклюзивний запис</summary>
+        </member>
+        <member name="T:_COUNTED_REASON_CONTEXT">
+\cond NEVER 
+</member>
+        <member name="M:Rem.Core.Internals.Exceptions.ThrowNullPointException(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64,System.Byte)">
+            <summary>Генерація помилки з провіркою типу</summary>
+            <param name="ExceptionObj">Об'єкт помилки або функція яка вертає такий об'єкт</param>
+            <summary>Заборона використання <c>throw</c> без провірок на тип об'єкта помилки</summary>
+            <summary>Макрос локалізації помилки</summary>
+        </member>
+        <member name="M:__cxxrethrow">
+            <summary>Внутрішня функція пркидування поточної помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NtException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NtException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.Int32)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="StatusCode">Код помилки</param>
+        </member>
+        <member name="F:Rem.Core.Exceptions.NtException.statusCode">
+            <summary>NtStatus code операції</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.EndNodeNotDeferencable.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.EndNodeNotDeferencable.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.EndNodeNotDeferencable">
+            <summary>Ітератор на кінець не є визначеним</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IntegerOverflowException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IntegerOverflowException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.IntegerOverflowException">
+            <summary>Цілочисельне переповнення</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.StringToLong.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.StringToLong.RequiredSize">
+            <summary>Запрошений розмір</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.StringToLong.GetRequiredSize">
+            <summary>Вертає запрошений розмір</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.StringToLong.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="RequiredSize">Запрошений розмір</param>
+        </member>
+        <member name="F:Rem.Core.Exceptions.StringToLong.requiredSize">
+            <summary>Запрошений розмір</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.StringToLong">
+            <summary>Рядок має завеликий розмір</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InteruptException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InteruptException.GetLocation">
+            <summary>Вертає місце генерації помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InteruptException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InteruptException">
+            <summary>Операцію перервано</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidArgumentException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.InvalidArgumentException.Description">
+            <summary>Додаткова інформація</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.InvalidArgumentException.ArgumentPosition">
+            <summary>Ім'я аргумента</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidArgumentException.GetDescription">
+            <summary>Вертає додаткову інформацію</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidArgumentException.GetArgName">
+            <summary>Вертає ім'я аргумента</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidArgumentException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,Rem.Core.ConstString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="ArgName">Ім'я аргумента</param>
+            <param name="Description">Додаткова інформація</param>
+        </member>
+        <member name="F:Rem.Core.Exceptions.InvalidArgumentException.DescriptionValue">
+            <summary>Додаткова інформація</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.InvalidArgumentException.ArgNameValue">
+            <summary>Ім'я аргумента</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InvalidArgumentException">
+            <summary>Невірний аргумент</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidTypeException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.InvalidTypeException.ActuallyType">
+            <summary>Інформація про фактичний тип</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.InvalidTypeException.RequiredType">
+            <summary>Інформація про очікуваний тип</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidTypeException.GetActuallyType">
+            <summary>Інформація про фактичний тип</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidTypeException.GetRequiredType">
+            <summary>Інформація про очікуваний тип</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidTypeException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,type_info!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,type_info!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="RequireType">Інформація про очікуваний тип</param>
+            <param name="ActuallyType">Інформація про фактичний тип</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InvalidTypeException">
+            <summary>Некоректний тип</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IndexOutOfRange.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.IndexOutOfRange.MaxAllowedIndex">
+            <summary>Максимальний достуаний індекс</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.IndexOutOfRange.RequiredIndex">
+            <summary>Запрошуваний індекс</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IndexOutOfRange.GetMaxAllowedIndex">
+            <summary>Максимальний достуаний індекс</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IndexOutOfRange.GetRequiredIndex">
+            <summary>Запрошуваний індекс</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.IndexOutOfRange.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="RequiredIndex">Індекс елемента який пробували отримати</param>
+            <param name="MaxAllowedIndex">Максимальний допустимий індекс</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.IndexOutOfRange">
+            <summary>Доступ до елемента який знаходится за межею розмірів</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NotImplemented.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NotImplemented.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.NotImplemented">
+            <summary>Невірний формат</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidFormatException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidFormatException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InvalidFormatException">
+            <summary>Невірний формат</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InternalError.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InternalError.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InternalError">
+            <summary>Внутрішня помилка ядра</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.GetAllocatedMemBlksCount">
+            <summary>Вертає кількість блоків пам'яті які були виділенні на момент виникненя помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.GetAllocatedBytes">
+            <summary>Вертає кількість байт які були виділені на момент виникнення помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.GetRequiredBytes">
+            <summary>Вертає кількість байт які пробували виділити</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.GetHeapName">
+            <summary>Вертає ім'я кучі в якій пробували виділити пам'ять</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.OutOfMemory.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,Rem.Core.ConstString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="HeapName">Ім'я кучі з маленької літери</param>
+            <param name="TryAllocate">Кількість байт які пробували виділити</param>
+            <param name="AllocatedBefore">Кількість байт які були виділені на момент генерації виключення</param>
+            <param name="MemBlksCountBefore">Кількість блоків які були виділені на момент генерації виключення</param>
+        </member>
+        <member name="F:Rem.Core.Exceptions.OutOfMemory.MemBlkscountBefore">
+            <summary>Кількість елементів зайннятих до</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.OutOfMemory.AllocatedBefore">
+            <summary>Кількість байт зайннятих до виділення</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.OutOfMemory.TryAllocate">
+            <summary>Кількість байт які пробували виділити</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.OutOfMemory.HeapName">
+            <summary>Ім'я кучі</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.OutOfMemory">
+            <summary>Недостатньо оперативної пам'яті для операції</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.BadException">
+            <summary>Некоректний тип помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.KeyAllredyExistException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.KeyAllredyExistException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.KeyAllredyExistException">
+            <summary>Ключ вжк існує</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadPureCall.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadPureCall.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.BadPureCall">
+            <summary>Неможливо викликати віртуальну функцію</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadCast.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.BadCast.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.BadCast">
+            <summary>Неможливо перетворити тип</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidHandleUsage.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.InvalidHandleUsage.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.InvalidHandleUsage">
+            <summary>Використання невалідного дескриптора</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NullPointException.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NullPointException.GetAccessType">
+            <summary>Тип доступу до комірки який згенерував помилку</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NullPointException.GetMemoryAddress">
+            <summary>Адрес комірки пам'яті яка згенерувала помилку</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NullPointException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="Addr">Адрес комірки пам'яті яка згенерувала помилку</param>
+            <param mame="Type">Тип доступу до комірки який згенерував помилку</param>
+        </member>
+        <member name="M:Rem.Core.Exceptions.NullPointException.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64,&lt;unknown type&gt;)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="Addr">Адрес комірки пам'яті яка згенерувала помилку</param>
+            <param mame="Type">Тип доступу до комірки який згенерував помилку</param>
+        </member>
+        <member name="F:Rem.Core.Exceptions.NullPointException.Type">
+            <summary>Тип доступу який згенерував помилку</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.NullPointException.Addr">
+            <summary>Адресс який спробували використати</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.NullPointException.Types">
+            <summary> Можливі варіанти помилки</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.NullPointException">
+            <summary>Помилка доступу до комірки пам'яті
+<para>Буває трьох варінтів</para><para> - Read	- спроба прочитати за неіснуючим адресом</para><para> - Write	- спроба записати за неіснуючим адресом</para><para> - Execute - спроба виконати команду за неіснуючим адресом</para><para>Тому помилка містить інформацію про тип доступу та адресс який пробували використати</para></summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.DivideByZero.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.DivideByZero.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+        </member>
+        <member name="T:Rem.Core.Exceptions.DivideByZero">
+            <summary>Ділення на ноль</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.Dispose">
+            <summary>Деструктор оголошений для правильного знищення об'єктів які наслідуються</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.toString">
+            <summary>Текстове представлення інформації про помилки помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.Exception.Location">
+            <summary>Місце генерації помилки</summary>
+        </member>
+        <member name="P:Rem.Core.Exceptions.Exception.Name">
+            <summary>Користувальницька назва помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.GetLocation">
+            <summary>Вертає місце генерації помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.GetExceptioName">
+            <summary>Вертає користувальницьку назву помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,Rem.Core.ConstString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Конструктор помилки</summary>
+            <param name="File">Файл в якому згенерована помилка</param>
+            <param name="FunctName">Ім'я функції</param>
+            <param name="Line">Номер рядка де була згенерована помилка</param>
+            <param name="Name">Ім'я помилки</param>
+            <returns>Екземпляр класу Exeption</returns>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.exeptionName">
+            <summary>Ім'я помилки</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.location">
+            <summary>Місце генерації даної помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Exceptions.Exception.ExeptionLocation.toString">
+            <summary>Текстове представлення</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.ExeptionLocation.ThreadID">
+            <summary>ID потоку</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.ExeptionLocation.Line">
+            <summary>Номер рядка</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.ExeptionLocation.FunctName">
+            <summary>Ім'я функції</summary>
+        </member>
+        <member name="F:Rem.Core.Exceptions.Exception.ExeptionLocation.File">
+            <summary>Ім'я файла</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.Exception.ExeptionLocation">
+            <summary>Місце генерації помилки</summary>
+        </member>
+        <member name="T:Rem.Core.Exceptions.Exception">
+            <summary>Класс базової помилки</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.CurrentHeapUsage">
+            <summary>Фактичнй розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.CurrentAllocatedMemory">
+            <summary>Розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.CurrentMemBlkCount">
+            <summary>Кількість виділених блоків даних</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.AllignedFree(System.Void*,System.UInt64)">
+            <summary>Звільнення пам'яті яка буа виділена по границі</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.Free(System.Void*)">
+            <summary>Звільнення пам'яті</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.AllignedAllocate(System.UInt64,System.UInt64)">
+            <summary>Вирівнняне виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.ExceptionHeap.Allocate(System.UInt64)">
+            <summary>Виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.NextLine">
+            <summary>Позначка переходу на новий рядок, використовується CRLF режим</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.Threading">
+            <summary>Налаштування багатопотоковості</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.VirtualSetting">
+            <summary>Рантайм налаштування</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.KernelService">
+            <summary>Налаштування сервісів ядра</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManager">
+            <summary>Налаштування менеджера пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.VirtualSettingDataT.CpuCoresCount">
+            <summary>Кількість ядер в процесора у робочої системи</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.VirtualSettingDataT.KernelExcecutableLocation">
+            <summary>Повний NT адресс виконавчого файла ядра</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.KernelServiceConfigT.TaskSheduler">
+            <summary>Налаштування сервісу планування задач</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.KernelServiceConfigT.TaskShedulerCfgT.DefaultTimerProximity">
+            <summary>Стандартна точність таймера для задач</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.ThreadingCfgT.Thread">
+            <summary>Налаштування потоків</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.ThreadingCfgT.ThreadCfg.StackMaxSize">
+            <summary>Максимальний розмір стеку у потоків</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.ThreadingCfgT.ThreadCfg.StackStartSize">
+            <summary>Стартовий розмір стеку у потоків</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.QueueReserveSize">
+            <summary>Розмір резервування для черги у кількості елементів</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.StackReserveSize">
+            <summary>Розмір резервування для стеку у кількості елементів</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultPriorityQueueMaxSize">
+            <summary>Стандартна максимальна кількість елементів чергів</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.StringReserveSize">
+            <summary>Розмір резервування дял рядкової зміної в кількості символів</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeap">
+            <summary>Налаштування кучі для помилок</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeap">
+            <summary>Налаштування чутливої кучі пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeap">
+            <summary>Налаштування стандартної кучі пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.HeapValidationChecks">
+            <summary>Провірка кучі при виділенні\звільненні пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.HeapArgsCheck">
+            <summary>Провірка аргументів при виділенні\звільнені</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.HeapTailCheck">
+            <summary>Провірка хвоста кучі</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.HeapFreeCheck">
+            <summary>Провірка кучі на цілісність при звільнені ділянки пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.MaxSize">
+            <summary>Максимальний розмір кучі
+<para>0 - значить без обмежень</para></summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.ExceptionHeapT.StartSize">
+            <summary>Стартовий розмір кучі</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.HeapAllocsLogging">
+            <summary>Логування всіх алокацій і звільненнь пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.HeapValidationChecks">
+            <summary>Провірка кучі при виділенні\звільненні пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.HeapArgsCheck">
+            <summary>Провірка аргументів при виділенні\звільнені</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.HeapTailCheck">
+            <summary>Провірка хвоста кучі</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.HeapFreeCheck">
+            <summary>Провірка кучі на цілісність при звільнені ділянки пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.MaxSize">
+            <summary>Максимальний розмір кучі
+<para>0 - значить без обмежень</para></summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.SensitiveDataHeapT.StartSize">
+            <summary>Стартовий розмір кучі</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.HeapAllocsLogging">
+            <summary>Логування всіх алокацій і звільненнь пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.HeapValidationChecks">
+            <summary>Провірка кучі при виділенні\звільненні пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.HeapArgsCheck">
+            <summary>Провірка аргументів при виділенні\звільнені</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.HeapTailCheck">
+            <summary>Провірка хвоста кучі</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.HeapFreeCheck">
+            <summary>Провірка кучі на цілісність при звільнені ділянки пам'яті</summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.MaxSize">
+            <summary>Максимальний розмір кучі
+<para>0 - значить без обмежень</para></summary>
+        </member>
+        <member name="P:Rem.Core.CurrentSettings.MemoryManagerT.DefaultHeapT.StartSize">
+            <summary>Стартовий розмір кучі</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.VirtualSettingData.CpuCoresCount">
+            <summary>Кількість ядер в хост ситема ядра</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.VirtualSettingData.KernelExecutableLocation">
+            <summary>Розташування виконавчого файла ядра</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.VirtualSettingData">
+            <summary>Налаштування середовища</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.KernelServiceConfig">
+            <summary>Налаштування сервісів ядра</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.Threading">
+            <summary>Налаштування багатопотоковості</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MainMemoryManager">
+            <summary>Налаштування менеджера пам'яті</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskSheduler">
+            <summary>Налаштування планувальника задач</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskShedulerCfgT.DefaultTimerProximity">
+            <summary>Стандартна роздільна здатність таймера для задач в планувальнику задач</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskShedulerCfgT">
+            <summary>Налаштування планувальника задач</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT">
+            <summary>Налаштування сервісів ядра</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.Thread">
+            <summary>Налаштування потоків</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg.StackStartSize">
+            <summary>Максиальний розмір стеку потоків</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg.StackMaxSize">
+            <summary>Стартовий розмір стеку потоків</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg">
+            <summary>Налаштування потоків</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.ThreadingCfg">
+            <summary>Налаштування багатопотоковості</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.DynamicQueueReserveSize">
+            <summary>Розмір резурвування для черги у кількіоті елементів</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.DynamicStackReserveSize">
+            <summary>Розмір резервування для стеку у кількості елементів</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.DefaultPriorityQueueMaxSize">
+            <summary>Стандартна максимальна кількість елементів чергів</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.StringReserveSize">
+            <summary>Розмір резервування для рядків у кількості рядки</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.ExceptionHeap">
+            <summary>Куча для помилок</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.SensitiveDataHeap">
+            <summary>Чутлива куча</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.DefaultHeap">
+            <summary>Стандартна куча</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.IsLogingAllAllocationAndFree">
+            <summary>Логування алокацій</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.AdditionalСhecks">
+            <summary>Додаткові флаги кучі</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_VALIDATE_ALL">
+            <summary>Провірка кучі при кожному запуску</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_ARGS_CHECK">
+            <summary>Провірка аргументів при виділення\звільнені</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_TAIL_CHECK">
+            <summary>Провірка хвоста кучі</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_FREE_CHECK">
+            <summary>Провірка при вивільнені пам'яті</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks">
+            <summary>Додаткові флаги кучі</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.MaxSize">
+            <summary>Максимальний розмір кучі</summary>
+        </member>
+        <member name="F:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.StartSize">
+            <summary>Стартовий розмір кучі</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg">
+            <summary>Налаштування кучі</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData.MemoryManager">
+            <summary>Налаштування менеджера пам'яті</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings.SettingsData">
+            <summary>Дані налаштувань</summary>
+        </member>
+        <member name="T:Rem.Core.CurrentSettings">
+            <summary>Сінглтон татичний класс поточних настройок</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.LINQ.IAssociableCollectionGenericBase">
+            <summary>
+Базовий клас для асоціативних колекцій
+</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.LINQ.IFixedCollectionGenericBase">
+            <summary>
+Базовий клас для фіксованих колекцій
+</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.LINQ.ICollectionGenericBase">
+            <summary>
+Базовий клас для загальних колекцій
+</summary>
+        </member>
+        <member name="T:Rem.Core.Containers.LINQ.ILinqBase">
+            <summary>
+Базовий клас для LINQ контейнерів
+</summary>
+        </member>
+        <member name="P:Rem.Core.ConstString.Str">
+            <summary>Константний масив символів цього константного рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstString.GetString">
+            <summary>Вертає константний масив символів цього константного рядка</summary>
+        </member>
+        <member name="P:Rem.Core.ConstString.Size">
+            <summary>Розмір константного рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstString.GetSize">
+            <summary>Вертає розмір константного рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstString.op_Subscript(System.UInt64)">
+            <param name="orig">Оригинал константного рядка</param>
+            <summary>Оператор доступу до символів константного рядка</summary>
+            <param name="Index">Індекс символа в рядку</param>
+        </member>
+        <member name="M:Rem.Core.ConstString.#ctor(Rem.Core.ConstString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Копіювальний конструктор</summary>
+            <param name="orig">Оригинал константного рядка</param>
+        </member>
+        <member name="F:Rem.Core.ConstString.size">
+            <summary>Його розмір</summary>
+        </member>
+        <member name="F:Rem.Core.ConstString.str">
+            <summary>Покажчик на текст</summary>
+        </member>
+        <member name="T:Rem.Core.ConstString">
+            <summary>Константний рядок який пам'ятає свій розмір</summary>
+        </member>
+        <member name="P:Rem.Core.ConstAString.Str">
+            <summary>Константний масив символів цього константного ASCII рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstAString.GetString">
+            <summary>Вертає константний масив символів цього константного ASCII рядка</summary>
+        </member>
+        <member name="P:Rem.Core.ConstAString.Size">
+            <summary>Розмір константного ASCII рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstAString.GetSize">
+            <summary>Вертає розмір константного ASCII рядка</summary>
+        </member>
+        <member name="M:Rem.Core.ConstAString.op_Subscript(System.UInt64)">
+            <summary>Оператор доступу до символів константного ASCII рядка</summary>
+            <param name="Index">Індекс символа в рядку</param>
+        </member>
+        <member name="M:Rem.Core.ConstAString.#ctor(Rem.Core.ConstAString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Копіювальний конструктор</summary>
+            <param name="orig">Оригинал константного рядка</param>
+        </member>
+        <member name="F:Rem.Core.ConstAString.size">
+            <summary>Його розмір</summary>
+        </member>
+        <member name="F:Rem.Core.ConstAString.str">
+            <summary>Покажчик на текст</summary>
+        </member>
+        <member name="T:Rem.Core.ConstAString">
+            <summary>Константний ASCII рядок який пам'ятає свій розмір</summary>
+        </member>
+        <member name="M:delete[](System.Void*,System.UInt64,&lt;unknown type&gt;)">
+            <summary>Оператор видалення масиву об'єктів з специфічним вирівннюванням та розміром</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+            <param name="Size">Розмір ділянки пам'яті</param>
+        </member>
+        <member name="M:delete(System.Void*,System.UInt64,&lt;unknown type&gt;)">
+            <summary>Оператор видалення одиночного об'єкту з специфічним вирівннюванням та розміром</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+            <param name="Size">Розмір ділянки пам'яті</param>
+        </member>
+        <member name="M:delete[](System.Void*,System.UInt64)">
+            <summary>Оператор видалення масиву об'єктів з передачею розміру об'єкта</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Size">Розмір ділянки пам'яті</param>
+        </member>
+        <member name="M:delete(System.Void*,System.UInt64)">
+            <summary>Оператор видалення одиночного об'єкту з передачею розміру об'єкта</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Size">Розмір ділянки пам'яті</param>
+        </member>
+        <member name="M:delete[](System.Void*,&lt;unknown type&gt;)">
+            <summary>Оператор видалення масиву об'єктів з специфічним вирівннюванням</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+        </member>
+        <member name="M:delete(System.Void*,&lt;unknown type&gt;)">
+            <summary>Оператор видалення одиночного об'єкту з специфічним вирівннюванням</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+        </member>
+        <member name="M:delete[](System.Void*)">
+            <summary>Оператор видалення масиву об'єктів</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+        </member>
+        <member name="M:delete(System.Void*)">
+            <summary>Оператор видалення одиночного об'єкту</summary>
+            <param name="MemBlk">Ділянка пам'яті</param>
+        </member>
+        <member name="M:new[](System.UInt64,&lt;unknown type&gt;)">
+            <summary>Оператор виділення масиву об'єктів з специфічним вирівнюванням</summary>
+            <param name="Size">Розмір ділянки пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+            <returns>Вертає ділянку пам'яті</returns>
+        </member>
+        <member name="M:new(System.UInt64,&lt;unknown type&gt;)">
+            <summary>Оператор виділення одиночного об'єкта з специфічним вирівнюванням</summary>
+            <param name="Size">Розмір ділянки пам'яті</param>
+            <param name="Allign">Границя вирівнювання</param>
+            <returns>Вертає ділянку пам'яті</returns>
+        </member>
+        <member name="M:new[](System.UInt64)">
+            <summary>Оператор виділення масиву об'єктів</summary>
+            <param name="Size">Розмір масиву об'єктів</param>
+            <returns>Вертає ділянку пам'яті</returns>
+        </member>
+        <member name="M:new(System.UInt64)">
+            <summary>Оператор виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки пам'яті</param>
+            <returns>Вертає ділянку пам'яті</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.MemBlkFill(System.Void*,System.UInt64,System.Byte!System.Runtime.CompilerServices.IsConst)">
+            <summary>Заповнює блок пам'яті певним значенням</summary>
+            <param name="MemBlk">Блок пам'яті</param>
+            <param name="Size">Розмір в байтах ділянки пам'яті</param>
+            <param name="Filler">Значення яким заповнить ділянку пам'яті</param>
+        </member>
+        <member name="M:Rem.Core.Memory.Copy(System.Void!System.Runtime.CompilerServices.IsConst*,System.Void*,System.UInt64)">
+            <summary>Копіювання ділянки пам'яті</summary>
+            <param name="Source">Ділянка пам'яті яка копіюється</param>
+            <param name="Destination">Ділянка пам'яті куда копіюється</param>
+            <param name="Size">Кількість байт як потрібно скопіювати</param>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentTotalHeapsUsage">
+            <summary>Загальне використання пам'яті у всіх керованих кучах кучах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentTotalAllocatedMemory">
+            <summary>Загальний розмір виділеної пам'яті у всіх керованих кучах кучах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentTotalAllocatedMemBlks">
+            <summary>Загальне кількість виділених блоків пам'яті у всіх керованих кучах кучах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentInternalHeapHeapsUsage">
+            <summary>Загальне використання пам'яті у внутрішній кучі рантайму</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentInternalHeapAllocatedMemory">
+            <summary>Загальний розмір виділеної пам'яті у внутрішній кучі рантайму</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.CurrentInternalHeapAllocatedMemBlks">
+            <summary>Загальне кількість виділених блоків пам'яті у внутрішній кучі рантайму</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.CurrentHeapUsage">
+            <summary>Фактичнй розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.CurrentAllocatedMemory">
+            <summary>Розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.CurrentMemBlkCount">
+            <summary>Кількість виділених блоків даних</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.AllignedFree(System.Void*,System.UInt64)">
+            <summary>Звільнення пам'яті яка буа виділена по границі</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.Free(System.Void*)">
+            <summary>Звільнення пам'яті</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.AllignedAllocate(System.UInt64,System.UInt64)">
+            <summary>Вирівнняне виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+            <returns>Виділену ділянку або</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.Allocate(System.UInt64)">
+            <summary>Виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.Stop">
+            <summary>Зупинка кучі</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.SensitiveDataHeap.Init">
+            <summary>Ініціалізація кучі</summary>
+            <returns>True якщо ініціалізація вдало проведена</returns>
+        </member>
+        <member name="T:Rem.Core.Memory.SensitiveDataHeap">
+            <summary>Захищена куча</summary>
+            <remarks>Перед виділенням і після звільнення відбувається обнулення пам'яті</remarks>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.CurrentHeapUsage">
+            <summary>Фактичнй розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.CurrentAllocatedMemory">
+            <summary>Розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.CurrentMemBlkCount">
+            <summary>Кількість виділених блоків даних</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.AllignedFree(System.Void*,System.UInt64)">
+            <summary>Звільнення пам'яті яка буа виділена по границі</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.Free(System.Void*)">
+            <summary>Звільнення пам'яті</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.AllignedAllocate(System.UInt64,System.UInt64)">
+            <summary>Вирівнняне виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.Allocate(System.UInt64)">
+            <summary>Виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.Stop">
+            <summary>Зупинка куч</summary>
+            <summary>Зупинка куч</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.Init">
+            <summary>Ініціалізація кучі</summary>
+            <returns>True якщо ініціалізація проведена успішно</returns>
+            <summary>Ініціалізація кучі</summary>
+            <returns>True якщо ініціалізація проведена успішно</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.Stop">
+            <summary>Зупинка кучі</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.Heap.Init">
+            <summary>Ініціалізація кучі</summary>
+            <returns>True якщо ініціалізація вдало проведена</returns>
+        </member>
+        <member name="T:Rem.Core.Memory.Heap">
+            <summary>Загальна куча</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.CurrentHeapUsage">
+            <summary>Фактичнй розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.CurrentAllocatedMemory">
+            <summary>Розмір виділеної пам'яті в байтах</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.CurrentMemBlkCount">
+            <summary>Кількість виділених блоків даних</summary>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.AllignedFree(System.Void*,System.UInt64)">
+            <summary>Звільнення пам'яті яка буа виділена по границі</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.Free(System.Void*)">
+            <summary>Звільнення пам'яті</summary>
+            <param name="MemBlk">Блок пам'яті який звільняється</param>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.AllignedAllocate(System.UInt64,System.UInt64)">
+            <summary>Вирівнняне виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <param name="AllocationReq">Границя вирівнювання</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="M:Rem.Core.Memory.BasicHeap.Allocate(System.UInt64)">
+            <summary>Виділення пам'яті</summary>
+            <param name="Size">Розмір ділянки в байтах</param>
+            <returns>Виділену ділянку</returns>
+        </member>
+        <member name="T:Rem.Core.Memory.BasicHeap">
+            <summary>Базовий клас куч</summary>
+        </member>
+        <member name="T:Rem.Core.Equality">
+            <summary>Можливі варіанти порівняння</summary>
+        </member>
+        <member name="M:Rem.Core.IDisposable.Dispose">
+            <summary>Метод для звільнення ресурсів,
+<para>викликається деструктором автоматично в класів з підрахунком силок</para></summary>
+            <see>
+                <code>RefCountClass</code>
+            </see>
+        </member>
+        <member name="T:Rem.Core.IDisposable">
+            <summary>Інтерфейс звільнення ресурсів з класу з підрахунком силок</summary>
+        </member>
+        <member name="M:Rem.Core.RefCountT.op_Implicit~System.UInt64">
+            <summary>Вертає значення в вигляді <code>SizeT</code> змінної</summary>
+            <returns>Поточне значення об'єкта</returns>
+        </member>
+        <member name="M:Rem.Core.RefCountT.op_Decrement(System.Int32)">
+            <summary>Постфіксний декремент
+<para>Використовує функцію <code>InterlockedDecrementSize</code> для декременту</para></summary>
+            <returns>Вертає копію об'єкта до декременту</returns>
+        </member>
+        <member name="M:Rem.Core.RefCountT.op_Decrement">
+            <summary>Префіксний декремент
+<para>Використовує функцію <code>InterlockedDecrement</code> для декременту</para></summary>
+            <returns>Вертає силку на елемент після декременту</returns>
+        </member>
+        <member name="M:Rem.Core.RefCountT.op_Increment(System.Int32)">
+            <summary>Постфіксний інкремент
+<para>Використовує функцію <code>InterlockedIncrement</code> для інкременту</para></summary>
+            <returns>Вертає копію об'єкта до інкременту</returns>
+        </member>
+        <member name="M:Rem.Core.RefCountT.op_Increment">
+            <summary>Префіксний інкремент
+<para>Використовує функцію <code>InterlockedIncrement</code> для інкременту</para></summary>
+            <returns>Вертає силку на елемент після інкременту</returns>
+        </member>
+        <member name="M:Rem.Core.RefCountT.#ctor(System.UInt64)">
+            <summary>Конструктор з <code>SizeT</code></summary>
+            <param name="Count">Початкове значення</param>
+        </member>
+        <member name="P:Rem.Core.RefCountT.Value">
+            <summary>Поточне значення лічильника</summary>
+            <value>Значення лічильника</value>
+        </member>
+        <member name="M:Rem.Core.RefCountT.GetValue">
+            <summary>Гетер</summary>
+            <returns>Значення лічильника</returns>
+        </member>
+        <member name="F:Rem.Core.RefCountT.count">
+            <summary>Містить значення</summary>
+        </member>
+        <member name="T:Rem.Core.RefCountT">
+            <summary>Атомарний лічильник<para>Використовує функції InterlockedXXX</para></summary>
+        </member>
+        <member name="M:RegisterStaticDtors(=FUNC:System.Void)">
+            <summary>Сигнатура деструктора статичних змінних</summary>
+        </member>
+        <member name="T:_GUID">
+            <summary>128-бітний унікальний ідентифікатор</summary>
+        </member>
+        <member name="M:Rem.Core.CStr.ToDowncase(System.Char!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Перетворює символ у нижній регістр
+</summary>
+            <param name="symbol">Символ який потрібно перетворити</param>
+            <returns>Перетворений символ</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.ToUpcase(System.Char!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Перетворює символ у верхній регістр
+</summary>
+            <param name="symbol">Символ який потрібно перетворити</param>
+            <returns>Перетворений символ</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Compare(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*,System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*)">
+            <summary>Compile-time функція порівняння ASCII с-подібних рядків</summary>
+            <param name="Str1">Перша рядкова змінна</param>
+            <param name="Str2">Друга рядкова змінна</param>
+            <returns>True якщо всі символи ідентичні</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Compare(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte*!System.Runtime.CompilerServices.IsConst,System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte*!System.Runtime.CompilerServices.IsConst)">
+            <summary>Compile-time функція порівняння ASCII с-подібних рядків</summary>
+            <param name="Str1">Перша рядкова змінна</param>
+            <param name="Str2">Друга рядкова змінна</param>
+            <returns>True якщо всі символи ідентичні</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Compare(System.Char!System.Runtime.CompilerServices.IsConst*,System.Char!System.Runtime.CompilerServices.IsConst*)">
+            <summary>Compile-time функція порівняння UTF-16LE с-подібних рядків</summary>
+            <param name="Str1">Перша рядкова змінна</param>
+            <param name="Str2">Друга рядкова змінна</param>
+            <returns>True якщо всі символи ідентичні</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Compare(System.Char*!System.Runtime.CompilerServices.IsConst,System.Char*!System.Runtime.CompilerServices.IsConst)">
+            <summary>Compile-time функція порівняння UTF16-LE с-подібних рядків</summary>
+            <param name="Str1">Перша рядкова змінна</param>
+            <param name="Str2">Друга рядкова змінна</param>
+            <returns>True якщо всі символи ідентичні</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Copy(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*,System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte*)">
+            <summary>Функція копіювання с-подібних рядків
+<para>Позначена я не рекомендована</para></summary>
+            <param name="Source">Рядкова зміна з якої копіюється</param>
+            <param name="Dest">Рядкова зміна в яку копіюється</param>
+        </member>
+        <member name="M:Rem.Core.CStr.Copy(System.Char!System.Runtime.CompilerServices.IsConst*,System.Char*)">
+            <summary>Функція копіювання с-подібних рядків
+<para>Позначена я не рекомендована</para></summary>
+            <param name="Source">Рядкова зміна з якої копіюється</param>
+            <param name="Dest">Рядкова зміна в яку копіюється</param>
+        </member>
+        <member name="M:Rem.Core.CStr.Copy(System.Char*,System.Char*)">
+            <summary>Функція копіювання с-подібних рядків
+<para>Позначена я не рекомендована</para></summary>
+            <param name="Source">Рядкова зміна з якої копіюється</param>
+            <param name="Dest">Рядкова зміна в яку копіюється</param>
+        </member>
+        <member name="M:Rem.Core.CStr.Size(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*)">
+            <summary>Compile-time функція визначення кількості ASCII символів в символьному масиві</summary>
+            <param name="CStr">Рядкова зміна</param>
+            <returns>Кількість елементів в рядковому масиві</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Size(System.Char!System.Runtime.CompilerServices.IsConst*)">
+            <summary>Compile-time функція визначення кількості символів в символьному масиві</summary>
+            <param name="CStr">Рядкова зміна</param>
+            <returns>Кількість елементів в рядковому масиві</returns>
+        </member>
+        <member name="M:Rem.Core.CStr.Size(System.Char*!System.Runtime.CompilerServices.IsConst)">
+            <summary>Compile-time функція визначення кількості символів в символьному масиві</summary>
+            <param name="CStr">Рядкова зміна</param>
+            <returns>Кількість елементів в рядковому масиві</returns>
+        </member>
+        <member name="M:Rem.Core.BitCheck(System.Byte!System.Runtime.CompilerServices.IsConst,System.UInt64!System.Runtime.CompilerServices.IsConst)">
+            <summary>Перевірка біта під індексом bitIndex в байті b. Порядок bigEndian</summary>
+            <param name="b"> Байт в якому треба виставити біт</param>
+            <param name="bitIndex"> Номер біта від нуля</param>
+            <returns>True якщо 1, якщо 0 False</returns>
+        </member>
+        <member name="M:Rem.Core.BitReset(System.Byte*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64!System.Runtime.CompilerServices.IsConst)">
+            <summary>Виставлення 0 в байті b під індексом bitIndex. Порядок bigEndian</summary>
+            <param name="b"> Байт в якому треба виставити біт</param>
+            <param name="bitIndex"> Номер біта від нуля</param>
+        </member>
+        <member name="M:Rem.Core.BitSet(System.Byte*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64!System.Runtime.CompilerServices.IsConst)">
+            <summary>Виставлення 1 в байті b під індексом bitIndex. Порядок bigEndian</summary>
+            <param name="b"> Байт в якому треба виставити біт</param>
+            <param name="bitIndex"> Номер біта від нуля</param>
+        </member>
+        <member name="M:Rem.Core.Math.RoundToUpper(System.UInt64,System.UInt64)">
+            <summary>Заокруглення до верхнього значення при діленні</summary>
+            <param name="What">Вхідне число</param>
+            <param name="By">Дільник</param>
+            <results>Ділене заокреглене до верхньої сторони</results>
+            <remarks>Така функція потрібна при очислені кількості кластерів які будуть зайнняті файлом чи даними,
+<para>наприклад: розмір кластер 512 байт, розмір даних 1000 байт, кластер може бути або зайннятим або ні,</para><para>якщо дані не повністю займають кластер все одно вважається що він зайннятий, </para><para>відповідно 1000 / 512 буде 1 але ж зрозуміло що другий кластер теж буде зайннятий </para><para>тому і треба заокруглити до більшого тобто до 2</para></remarks>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.UInt64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64,System.UInt64)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.Int64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int64,System.Int64)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.UInt32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32,System.UInt32)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.Int32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32,System.Int32)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.UInt16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt16,System.UInt16)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.CompareAndSwap(System.Int16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int16,System.Int16)">
+            <summary>Атомарне порівняння і обмін
+<para> Порівнює destination з comperand і обмінює якщо рівне</para></summary>
+            <param name="destination">Силка на змінну в яку запишеться результат вразі успіху</param>
+            <param name="exchange">Нове значення</param>
+            <param name="comperand">Старе значення</param>
+            <returns>Початкове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.UInt64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.Int64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.UInt32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.Int32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.UInt16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Decrement(System.Int16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне декрементування змінної</summary>
+            <param name="what">Зміна яку потрібно декрементувати</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.UInt64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.Int64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.UInt32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.Int32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.UInt16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.Increment(System.Int16|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Атомарне інкрементування змінної</summary>
+            <param name="what">Зміна яку потрібно інкрементнути</param>
+            <returns>Нове значення</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.InterlockedAdd(System.UInt64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt64)">
+            <summary>Атомарне додавання</summary>
+            <param name="to">volatile зміна до якої додасться значення what</param>
+            <param name="what">зміна яка додасться</param>
+            <returns>Нове значення змінної to</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.InterlockedAdd(System.Int64|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int64)">
+            <summary>Атомарне додавання</summary>
+            <param name="to">volatile зміна до якої додасться значення what</param>
+            <param name="what">зміна яка додасться</param>
+            <returns>Нове значення змінної to</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.InterlockedAdd(System.UInt32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32)">
+            <summary>Атомарне додавання</summary>
+            <param name="to">volatile зміна до якої додасться значення what</param>
+            <param name="what">зміна яка додасться</param>
+            <returns>Нове значення змінної to</returns>
+        </member>
+        <member name="M:Rem.Core.Interlocked.InterlockedAdd(System.Int32|System.Runtime.CompilerServices.IsVolatile*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32)">
+            <summary>Атомарне додавання</summary>
+            <param name="to">volatile зміна до якої додасться значення what</param>
+            <param name="what">зміна яка додасться</param>
+            <returns>Нове значення змінної to</returns>
+        </member>
+        <member name="T:Rem.Core.Interlocked">
+            <summary>Набір атомарних InterlockedXXX операцій</summary>
+        </member>
+        <member name="M:&quot;&quot;U(System.Char!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsConst,System.UInt64!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Рядковий літерал для кодування UTF-16LE
+</summary>
+            <param name="text">Покажчик на рядкову константу</param>
+            <param name="size">Кількість елементів рядкового масиву</param>
+            <returns>Константу CharStr</returns>
+        </member>
+    </members>
+</doc>
