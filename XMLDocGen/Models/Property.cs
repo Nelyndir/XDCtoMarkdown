@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XMLDocGen.Models
 {
-    class Property : Member
+    public class Property : Member
     {
         public string Description { get; }
 
@@ -16,6 +16,19 @@ namespace XMLDocGen.Models
         public override string ToString()
         {
             return $"Property: {base.ToString()} - summary: {Description}";
+        }
+
+        public override string ToMarkdown()
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append($"### Property: {Name}{Environment.NewLine}");
+            result.Append($"```cpp {Environment.NewLine}");
+            result.Append($"property {Name};");
+            result.Append($"``` {Environment.NewLine}");
+
+            result.Append($"Description: {Description}{Environment.NewLine}");
+
+            return result.ToString();
         }
     }
 }

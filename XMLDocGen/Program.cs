@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 
 namespace XMLDocGen
@@ -18,18 +20,19 @@ namespace XMLDocGen
             var assemblyNode = docXmlNode.SelectSingleNode("assembly");
 
             Console.WriteLine("Assembly name: " + assemblyNode.InnerText);
-            foreach(XmlNode member in docXmlNode.SelectSingleNode("members").SelectNodes("member"))
+
+            var members = XDCParser.Parse(docXmlNode.SelectSingleNode("members"));
+
+            using (var markdownFile = new StreamWriter(path + ".md"))
             {
-                var memberName = member.Attributes.GetNamedItem("name").InnerText;
-
-                switch (memberName[0])
+                foreach(var member in members)
                 {
-                    case 'M':
-                        {
-
-                        }
+                    markdownFile.Write(member.ToMarkdown());
                 }
+
+                markdownFile.Close();
             }
+        
             Console.ReadKey();
         }
     }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace XMLDocGen.Models
 {
-    class Member
+    public abstract class Member
     {
-        public string Name { get; }
+        public string Name { get; protected set; }
 
         public Member(string name)
         {
@@ -17,5 +17,7 @@ namespace XMLDocGen.Models
         {
             return $"Name: {Name}{Environment.NewLine}";
         }
+
+        public abstract string ToMarkdown();
     }
 }
