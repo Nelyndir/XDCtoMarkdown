@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
+using XMLDocGen.Models;
 
 namespace XMLDocGen
 {
@@ -11,7 +12,7 @@ namespace XMLDocGen
         {
             //Console.Write("Input file name: ");
             //var path = Console.ReadLine();
-            var path = "C:\\Users\\Nelyndir\\source\\repos\\XMLDocGen\\Natsuki Rem.xml";
+            var path = "..\\..\\..\\..\\Natsuki Rem.xml";
 
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
@@ -22,6 +23,10 @@ namespace XMLDocGen
             Console.WriteLine("Assembly name: " + assemblyNode.InnerText);
 
             var members = XDCParser.Parse(docXmlNode.SelectSingleNode("members"));
+            members.Sort((m1, m2) => m1.Name.CompareTo(m2.Name));
+
+            Container cont = new Container(members);
+
 
             using (var markdownFile = new StreamWriter(path + ".md"))
             {
