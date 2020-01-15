@@ -4,11 +4,14 @@ using System.Text;
 
 namespace XMLDocGen
 {
-    public class Container
+    public class Container 
+    //class for containing and managing XML data;
     {
-        protected List<XMLDocGen.Models.Member> Members { get; }
+        protected List<XMLDocGen.Models.Member> Members { get; } 
+        //Raw XML data;
 
-        protected List<Tree.Models.INode> Nodes;
+        protected List<Tree.Models.INode> Nodes; 
+        //Tree of sorted data;
 
         public Container(List<XMLDocGen.Models.Member> members)
         {
@@ -17,7 +20,9 @@ namespace XMLDocGen
             processing();
         }
 
-        private List<Tree.Models.INode> getNeededNode(string[] names, List<Tree.Models.INode> sNode)
+        private List<Tree.Models.INode> getNeededNode(string[] names, List<Tree.Models.INode> sNode) 
+        //function for getting and creating Node whish must contain proccesing Member
+        //(If inner scope is missing it creates new scope as namepace)
         {
             for (int i = 0; i < names.Length - 1; i++)
             {
@@ -35,13 +40,15 @@ namespace XMLDocGen
             foreach (var member in Members)
             {
                 List<Tree.Models.INode> Node = Nodes;
-                string[] sArr = member.Name.Split("(");
-                sArr =sArr[0].Split(".");
+                string[] sArr = member.Name.Split("("); //in case of function with signature;
+                sArr =sArr[0].Split("."); //splitting Name into scopes
                 if (sArr.Length > 1)
                 {
                     Node = getNeededNode(sArr, Nodes);
                 }
-                switch (member)
+                switch (member) 
+                //Adding new Node according to its Type.
+                //If Type doesn’t exist then it’s undefined.
                 {
                     case Models.Field fld:
                         Node.Add(new Tree.Models.NodeField(sArr[sArr.Length - 1], fld.Description));
