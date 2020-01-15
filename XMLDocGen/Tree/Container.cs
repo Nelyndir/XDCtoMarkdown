@@ -10,7 +10,7 @@ namespace XMLDocGen
 
         protected List<Tree.Models.INode> Nodes;
 
-        public Container (List<XMLDocGen.Models.Member> members)
+        public Container(List<XMLDocGen.Models.Member> members)
         {
             Members = members;
             Nodes = new List<Tree.Models.INode>();
@@ -19,7 +19,7 @@ namespace XMLDocGen
 
         private List<Tree.Models.INode> getNeededNode(string[] names, List<Tree.Models.INode> sNode)
         {
-            for (int i=0;i<names.Length-1;i++)
+            for (int i = 0; i < names.Length - 1; i++)
             {
                 if (sNode.Find(x => x.Name == names[i]) == null)
                 {
@@ -35,32 +35,30 @@ namespace XMLDocGen
         {
             foreach (var member in Members)
             {
-                if (!member.Name.Contains("System."))
+                List<Tree.Models.INode> Node = Nodes;
+                string[] sArr = member.Name.Split("(");
+                sArr =sArr[0].Split(".");
+                if (sArr.Length > 1)
                 {
-                    List<Tree.Models.INode> Node = Nodes;
-                    string[] sArr = member.Name.Split(".");
-                    if (sArr.Length > 1)
-                    {
-                        Node = getNeededNode(sArr, Nodes);
-                    }
-                    switch (member)
-                    {
-                        case Models.Field fld:
-                            Node.Add(new Tree.Models.NodeField(sArr[sArr.Length - 1], fld.Description));
-                            break;
-                        case Models.Method mth:
-                            Node.Add(new Tree.Models.NodeMethod(sArr[sArr.Length - 1], mth.Description, mth.Args, mth.Returns));
-                            break;
-                        case Models.Property prt:
-                            Node.Add(new Tree.Models.NodeProperty(sArr[sArr.Length - 1], prt.Description));
-                            break;
-                        case Models.Type tp:
-                            Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description));
-                            break;
-                        default:
-                            Node.Add(new Tree.Models.NodeUndef(sArr[sArr.Length - 1]));
-                            break;
-                    }
+                    Node = getNeededNode(sArr, Nodes);
+                }
+                switch (member)
+                {
+                    case Models.Field fld:
+                        Node.Add(new Tree.Models.NodeField(sArr[sArr.Length - 1], fld.Description));
+                        break;
+                    case Models.Method mth:
+                        Node.Add(new Tree.Models.NodeMethod(sArr[sArr.Length - 1], mth.Description, mth.Args, mth.Returns));
+                        break;
+                    case Models.Property prt:
+                        Node.Add(new Tree.Models.NodeProperty(sArr[sArr.Length - 1], prt.Description));
+                        break;
+                    case Models.Type tp:
+                        Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description));
+                        break;
+                    default:
+                        Node.Add(new Tree.Models.NodeUndef(sArr[sArr.Length - 1]));
+                        break;
                 }
             }
         }
