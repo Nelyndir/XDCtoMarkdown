@@ -14,11 +14,11 @@ namespace XMLDocGen.Tree.Models
 
         public string Description { get; }
 
-        public UInt16 Args { get; }
+        Dictionary<string, string> Args { get; }
 
         public string Returning { get; }
-        
-        public NodeMethod(string name, string desc, UInt16 args,string ret)
+
+        public NodeMethod(string name, string desc, Dictionary<string, string> args, string ret)
         {
             Name = name;
             Description = desc;
