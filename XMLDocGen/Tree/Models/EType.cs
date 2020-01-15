@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XMLDocGen.Tree.Models
 {
-    enum EType
+    public enum EType
     {
         Namespace,
         Type,
