@@ -10,8 +10,6 @@ namespace XMLDocGen
     {
         static void Main(string[] args)
         {
-            //Console.Write("Input file name: ");
-            //var path = Console.ReadLine();
             var path = "..\\..\\..\\..\\Natsuki Rem.xml";
 
             XmlDocument doc = new XmlDocument();
@@ -25,7 +23,7 @@ namespace XMLDocGen
             var members = XDCParser.Parse(docXmlNode.SelectSingleNode("members"));
             members.Sort((m1, m2) => m1.Name.CompareTo(m2.Name));
 
-           Container cont = new Container(members);
+            Container cont = new Container(members);
 
 
             using (var markdownFile = new StreamWriter(path + ".md"))
