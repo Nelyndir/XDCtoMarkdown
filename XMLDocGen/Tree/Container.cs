@@ -21,12 +21,11 @@ namespace XMLDocGen
         {
             for (int i = 0; i < names.Length - 1; i++)
             {
-                if (sNode.Find(x => x.Name == names[i]) == null)
+                if (!sNode.Exists(x => x.Name == names[i]))
                 {
                     sNode.Add(new Tree.Models.NodeNamespace(names[i]));
                 }
                 sNode = sNode.Find(x => x.Name == names[i]).Child;
-                i++;
             }
             return sNode;
         }
