@@ -10,6 +10,7 @@ namespace XMLDocGen
     {
         static void Main(string[] args)
         {
+            DateTime start = DateTime.Now;
             //Console.Write("Input file name: ");
             //var path = Console.ReadLine();
             var path = "..\\..\\..\\..\\Natsuki Rem.xml";
@@ -37,7 +38,7 @@ namespace XMLDocGen
 
                 markdownFile.Close();
             }
-        
+            Console.WriteLine((DateTime.Now-start).Ticks);
             Console.ReadKey();
         }
     }
