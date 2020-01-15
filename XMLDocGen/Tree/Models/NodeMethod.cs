@@ -6,7 +6,7 @@ namespace XMLDocGen.Tree.Models
 {
     class NodeMethod : INode
     {
-        public List<INode> Child { get; set; }
+        public List<INode> Child { get; set; } = new List<INode>();
 
         public EType Type { get => EType.Method; }
 

@@ -10,4 +10,5 @@ namespace XMLDocGen.Tree.Models
         EType Type { get; }
         String Name { get; }
     }
+
 }

@@ -10,6 +10,7 @@ namespace XMLDocGen.Tree.Models
         Type,
         Field,
         Function,
+        Property,
         Method,
         Undefined
     }
