@@ -13,7 +13,7 @@ namespace XMLDocGen
         public Container (List<XMLDocGen.Models.Member> members)
         {
             Members = members;
-            Console.ReadKey();
+        //    Console.ReadKey();
         }
     }
 }
