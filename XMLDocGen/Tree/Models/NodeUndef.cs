@@ -21,5 +21,10 @@ namespace XMLDocGen.Tree.Models
         {
             Name = name;
         }
+
+        public string ToMarkdown()
+        {
+            return string.Empty;
+        }
     }
 }

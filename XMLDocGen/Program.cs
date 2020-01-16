@@ -25,7 +25,7 @@ namespace XMLDocGen
             members.Sort((m1, m2) => m1.Name.CompareTo(m2.Name));
 
             Container cont = new Container(members);
-
+            cont.toMarkdownFiles(".\\");
 
             using (var markdownFile = new StreamWriter(path + ".md"))
             {
