@@ -50,75 +50,65 @@ namespace XMLDocGen
 
         private static void ParseField(List<Models.Member> members, XmlNode member, string memberName)
         {
-            var name = String.Empty;
-            var summary = String.Empty;
-            name = memberName.Substring(2);
-            try
-            {
-                summary = member.SelectSingleNode("summary").InnerText;
-            }
-            catch (System.Xml.XPath.XPathException) { }
-            catch (NullReferenceException) { }
-            members.Add(new Models.Field(name, summary));
+            members.Add(new Models.Field(
+                memberName.Substring(2),
+                member == null ? String.Empty : member.SelectSingleNode("summary").InnerText
+                ));
         }
 
         private static void ParseType(List<Models.Member> members, XmlNode member, string memberName)
         {
-            var name = String.Empty;
             var summary = String.Empty;
-            name = memberName.Substring(2);
-            try
+
+            if (member != null)
             {
-                summary = member.SelectSingleNode("summary").InnerText;
+                var temp = member.SelectSingleNode("summary");
+                if (temp != null)
+                {
+                    summary = temp.InnerText;
+                }
             }
-            catch (System.Xml.XPath.XPathException) { }
-            catch (NullReferenceException) { }
-            members.Add(new Models.Type(name, summary));
+            members.Add(new Models.Type(memberName.Substring(2), summary));
         }
 
         private static void ParseProperty(List<Models.Member> members, XmlNode member, string memberName)
         {
-            var name = String.Empty;
-            var summary = String.Empty;
-            name = memberName.Substring(2);
-            try
-            {
-                summary = member.SelectSingleNode("summary").InnerText;
-            }
-            catch (System.Xml.XPath.XPathException) { }
-            catch (NullReferenceException) { }
-            members.Add(new Models.Property(name, summary));
+            members.Add(new Models.Property(
+                memberName.Substring(2), 
+                member == null ? String.Empty : member.SelectSingleNode("summary").InnerText
+                ));
         }
 
         private static void ParseMethod(List<Models.Member> members, XmlNode member, string memberName)
         {
-            var name = String.Empty;
-            var summary = String.Empty;
             var returns = String.Empty;
             var param = new Dictionary<string, string>();
-            name = memberName.Substring(2);
-            try
+
+            
+            if (member != null)
             {
-                summary = member.SelectSingleNode("summary").InnerText;
-            }
-            catch (System.Xml.XPath.XPathException) { }
-            catch (NullReferenceException) { }
-            try
-            {
-                returns = member.SelectSingleNode("returns").InnerText;
-            }
-            catch (System.Xml.XPath.XPathException) { }
-            catch (NullReferenceException) { }
-            foreach (XmlNode paramXML in member.SelectNodes("param"))
-            {
-                try
+                var temp = member.SelectSingleNode("returns");
+                if (temp != null)
                 {
-                    param.Add(paramXML.Attributes.GetNamedItem("name").InnerText, paramXML.InnerText);
+                    returns = temp.InnerText;
                 }
-                catch (NullReferenceException) { }
             }
 
-            members.Add(new Models.Method(name, summary, returns, param));
+            foreach (XmlNode paramXML in member.SelectNodes("param"))
+            {
+                var temp = paramXML.Attributes.GetNamedItem("name");
+                if (temp != null)
+                {
+                    param.Add(temp.InnerText, paramXML.InnerText);
+                }
+            }
+
+            members.Add(new Models.Method(
+                memberName.Substring(2),
+                member == null ? String.Empty : member.SelectSingleNode("summary").InnerText,
+                returns,
+                param
+                ));
         }
     }
 }
