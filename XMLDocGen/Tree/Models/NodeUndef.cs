@@ -11,7 +11,7 @@ namespace XMLDocGen.Tree.Models
         public EType Type { get => EType.Undefined; }
 
         public string Name { get; }
-
+        public string FullName { get => ""; }
         public NodeUndef()
         {
             Name = "";

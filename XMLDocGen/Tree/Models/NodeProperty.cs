@@ -13,11 +13,13 @@ namespace XMLDocGen.Tree.Models
         public string Name { get; }
 
         public string Description { get; }
+        public string FullName { get; }
 
-        public NodeProperty(string name, string desc)
+        public NodeProperty(string name, string desc, string fn)
         {
             Name = name;
             Description = desc;
+            FullName = fn;
         }
     }
 }
