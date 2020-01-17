@@ -24,7 +24,7 @@ namespace XMLDocGen.Models
             result.Append($"### Property: {Name}{Environment.NewLine}");
             result.Append($"```cpp {Environment.NewLine}");
             result.Append($"property {Name};");
-            result.Append($"``` {Environment.NewLine}");
+            result.Append($"{Environment.NewLine} ``` {Environment.NewLine}");
 
             result.Append($"Description: {Description}{Environment.NewLine}");
 

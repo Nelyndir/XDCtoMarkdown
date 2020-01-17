@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace XMLDocGen
 {
@@ -71,6 +72,108 @@ namespace XMLDocGen
                         Node.Add(new Tree.Models.NodeUndef(sArr[sArr.Length - 1]));
                         break;
                 }
+            }
+        }
+
+        public void toMarkdownFiles(string path)
+        {
+            List<Tree.Models.INode> statics = new List<Tree.Models.INode>();
+            var thisPathName = path;
+            foreach (var child in Nodes)
+            {
+                switch (child.Type)
+                {
+                    case Tree.Models.EType.Namespace:
+                        nodeParser(child, thisPathName);
+                        break;
+                    case Tree.Models.EType.Type:
+                        saveClass(child as Tree.Models.NodeType, thisPathName);
+                        break;
+                    case Tree.Models.EType.Field:
+                        statics.Add(child);
+                        break;
+                    case Tree.Models.EType.Function:
+                        break;
+                    case Tree.Models.EType.Property:
+                        break;
+                    case Tree.Models.EType.Method:
+                        statics.Add(child);
+                        break;
+                    case Tree.Models.EType.Undefined:
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (statics.Count > 0)
+            {
+                saveStatics(statics, thisPathName, path);
+            }
+        }
+
+        private void nodeParser(Tree.Models.INode node, string path)
+        {
+            List<Tree.Models.INode> statics = new List<Tree.Models.INode>();
+            var thisPathName = Path.Combine(path, node.Name);
+            foreach (var child in node.Child)
+            {
+                switch (child.Type)
+                {
+                    case Tree.Models.EType.Namespace:
+                        nodeParser(child, thisPathName);
+                        break;
+                    case Tree.Models.EType.Type:
+                        saveClass(child as Tree.Models.NodeType, thisPathName);
+                        break;
+                    case Tree.Models.EType.Field:
+                        statics.Add(child);
+                        break;
+                    case Tree.Models.EType.Function:
+                        break;
+                    case Tree.Models.EType.Property:
+                        break;
+                    case Tree.Models.EType.Method:
+                        statics.Add(child);
+                        break;
+                    case Tree.Models.EType.Undefined:
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            saveStatics(statics, thisPathName, node.Name);
+        }
+
+        private void saveClass(Tree.Models.NodeType node, string path)
+        {
+            Directory.CreateDirectory(path);
+            string markdown = node.ToMarkdown();
+            var fileName = Path.Combine(path, node.Name + ".md");
+
+            using (var markdownFile = new StreamWriter(fileName))
+            {
+                markdownFile.Write(markdown);
+
+                markdownFile.Close();
+            }
+        }
+
+        private void saveStatics(List<Tree.Models.INode> statics, string path, string namespaceName)
+        {
+            Directory.CreateDirectory(path);
+            StringBuilder data = new StringBuilder();
+            foreach (var item in statics)
+            {
+                data.Append(item.ToMarkdown());
+            }
+            var fileName = Path.Combine(path, namespaceName + ".md");
+
+            using (var markdownFile = new StreamWriter(fileName))
+            {
+                markdownFile.Write(data);
+
+                markdownFile.Close();
             }
         }
 

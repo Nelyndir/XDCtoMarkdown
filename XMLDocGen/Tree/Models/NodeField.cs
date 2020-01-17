@@ -22,5 +22,17 @@ namespace XMLDocGen.Tree.Models
             Description = desc;
             FullName = fn;
         }
+        public string ToMarkdown()
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append($"### Field: {Name}{Environment.NewLine}");
+            result.Append($"```cpp {Environment.NewLine}");
+            result.Append(Name);
+            result.Append($"{Environment.NewLine} ``` {Environment.NewLine}");
+
+            result.Append($"Description: {Description}{Environment.NewLine}");
+
+            return result.ToString();
+        }
     }
 }

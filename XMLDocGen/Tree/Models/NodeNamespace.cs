@@ -16,5 +16,9 @@ namespace XMLDocGen.Tree.Models
             Name = name;
             FullName = fn;
         }
+        public string ToMarkdown()
+        {
+            return string.Empty;
+        }
     }
 }
