@@ -10,10 +10,11 @@ namespace XMLDocGen.Tree.Models
         public EType Type { get => EType.Namespace; }
 
         public string Name { get; }
-
-        public NodeNamespace(string name)
+        public string FullName { get; }
+        public NodeNamespace(string name, string fn)
         {
             Name = name;
+            FullName = fn;
         }
         public string ToMarkdown()
         {

@@ -25,12 +25,17 @@ namespace XMLDocGen
         //function for getting and creating Node whish must contain proccesing Member
         //(If inner scope is missing it creates new scope as namepace)
         {
+            StringBuilder fullname = new StringBuilder();
             for (int i = 0; i < names.Length - 1; i++)
             {
+                fullname.Insert(fullname.Length, names[i]);
                 if (!sNode.Exists(x => x.Name == names[i]))
                 {
-                    sNode.Add(new Tree.Models.NodeNamespace(names[i]));
+                    
+                    sNode.Add(new Tree.Models.NodeNamespace(names[i],fullname.ToString()));
+                    
                 }
+                fullname.Insert(fullname.Length, ".");
                 sNode = sNode.Find(x => x.Name == names[i]).Child;
             }
             return sNode;
@@ -52,16 +57,16 @@ namespace XMLDocGen
                 //If Type doesn’t exist then it’s undefined.
                 {
                     case Models.Field fld:
-                        Node.Add(new Tree.Models.NodeField(sArr[sArr.Length - 1], fld.Description));
+                        Node.Add(new Tree.Models.NodeField(sArr[sArr.Length - 1], fld.Description, member.Name.Split("(")[0]));
                         break;
                     case Models.Method mth:
-                        Node.Add(new Tree.Models.NodeMethod(sArr[sArr.Length - 1], mth.Description, mth.Args, mth.Returns));
+                        Node.Add(new Tree.Models.NodeMethod(sArr[sArr.Length - 1], mth.Description, mth.Args, mth.Returns, member.Name.Split("(")[0]));
                         break;
                     case Models.Property prt:
-                        Node.Add(new Tree.Models.NodeProperty(sArr[sArr.Length - 1], prt.Description));
+                        Node.Add(new Tree.Models.NodeProperty(sArr[sArr.Length - 1], prt.Description, member.Name.Split("(")[0]));
                         break;
                     case Models.Type tp:
-                        Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description));
+                        Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description, member.Name.Split("(")[0]));
                         break;
                     default:
                         Node.Add(new Tree.Models.NodeUndef(sArr[sArr.Length - 1]));

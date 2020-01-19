@@ -9,7 +9,11 @@ namespace XMLDocGen.Tree.Models
         List<INode> Child { get; set; }
         EType Type { get; }
         String Name { get; }
+
+        String FullName { get; }
+
         string ToMarkdown();
+
     }
 
 }

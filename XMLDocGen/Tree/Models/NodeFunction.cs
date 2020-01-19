@@ -17,13 +17,14 @@ namespace XMLDocGen.Tree.Models
         Dictionary<string, string> Args { get; }
 
         public string Returning { get; }
-
-        public NodeFunction(string name, string desc, Dictionary<string, string> args, string ret)
+        public string FullName { get; }
+        public NodeFunction(string name, string desc, Dictionary<string, string> args, string ret, string fn)
         {
             Name = name;
             Description = desc;
             Args = args;
             Returning = ret;
+            FullName = fn;
         }
         public string ToMarkdown()
         {
