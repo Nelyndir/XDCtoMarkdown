@@ -59,6 +59,7 @@ namespace XMLDocGen
         private static void ParseType(List<Models.Member> members, XmlNode member, string memberName)
         {
             var summary = String.Empty;
+            var param = new Dictionary<string, string>();
 
             if (member != null)
             {
@@ -68,7 +69,16 @@ namespace XMLDocGen
                     summary = temp.InnerText;
                 }
             }
-            members.Add(new Models.Type(memberName.Substring(2), summary));
+
+            foreach (XmlNode paramXML in member.SelectNodes("param"))
+            {
+                var temp = paramXML.Attributes.GetNamedItem("name");
+                if (temp != null)
+                {
+                    param.Add(temp.InnerText, paramXML.InnerText);
+                }
+            }
+            members.Add(new Models.Type(memberName.Substring(2), summary, param));
         }
 
         private static void ParseProperty(List<Models.Member> members, XmlNode member, string memberName)
