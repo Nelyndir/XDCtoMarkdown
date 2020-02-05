@@ -7,10 +7,12 @@ namespace XMLDocGen.Models
     public class Type : Member
     {
         public string Description { get; }
+        public Dictionary<string, string> Args { get; }
 
-        public Type(string name, string description) : base(name)
+        public Type(string name, string description, Dictionary<string, string> args) : base(name)
         {
             Description = description;
+            Args = args;
         }
 
         public override string ToString()
@@ -27,6 +29,15 @@ namespace XMLDocGen.Models
             result.Append($"{Environment.NewLine} ``` {Environment.NewLine}");
 
             result.Append($"Description: {Description}{Environment.NewLine}");
+
+            result.Append($"Parameters: {Environment.NewLine}");
+
+            result.Append($"_____ {Environment.NewLine}");
+            foreach (var param in Args)
+            {
+                result.Append($"1. {param.Key} - {param.Value}{Environment.NewLine}");
+            }
+            result.Append($"_____ {Environment.NewLine}");
 
             return result.ToString();
         }
