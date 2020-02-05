@@ -66,7 +66,7 @@ namespace XMLDocGen
                         Node.Add(new Tree.Models.NodeProperty(sArr[sArr.Length - 1], prt.Description, member.Name.Split("(")[0]));
                         break;
                     case Models.Type tp:
-                        Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description, member.Name.Split("(")[0]));
+                        Node.Add(new Tree.Models.NodeType(sArr[sArr.Length - 1], tp.Description, tp.Args, member.Name.Split("(")[0]));
                         break;
                     default:
                         Node.Add(new Tree.Models.NodeUndef(sArr[sArr.Length - 1]));

@@ -25,11 +25,17 @@ _____
 class _COUNTED_REASON_CONTEXT;
  ``` 
 Description: 
+Parameters: 
+_____ 
+_____ 
 ### class\struct _GUID
 ```cpp 
 class _GUID;
  ``` 
 Description: 128-бітний унікальний ідентифікатор
+Parameters: 
+_____ 
+_____ 
 ### Method delete
 ```cpp 
 delete(System.Void*)
@@ -123,6 +129,9 @@ _____
 class ExceptionsHeapT;
  ``` 
 Description: Інформація про кучу помилок
+Parameters: 
+_____ 
+_____ 
 ### Field: ExceptionsHeapT.AllocatedMemBlksCount
 ```cpp 
 ExceptionsHeapT.AllocatedMemBlksCount
@@ -148,6 +157,9 @@ Description: Дескриптор кучі
 class HeapDataT;
  ``` 
 Description: Інформація про кучі
+Parameters: 
+_____ 
+_____ 
 ### Field: HeapDataT.AllocatedMemBlksCount
 ```cpp 
 HeapDataT.AllocatedMemBlksCount
@@ -226,11 +238,17 @@ class Rem.Core.Bits;
 Description: 
 Бітові операції
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.ConstAString
 ```cpp 
 class Rem.Core.ConstAString;
  ``` 
 Description: Константний ASCII рядок який пам'ятає свій розмір
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.ConstAString.ctor
 ```cpp 
 Rem.Core.ConstAString.ctor(const Rem.Core.ConstAString &)
@@ -294,6 +312,9 @@ Description: Константний масив символів цього ко�
 class Rem.Core.ConstString;
  ``` 
 Description: Константний рядок який пам'ятає свій розмір
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.ConstString.ctor
 ```cpp 
 Rem.Core.ConstString.ctor(const Rem.Core.ConstString &)
@@ -360,6 +381,9 @@ class Rem.Core.Containers.Dynamic;
 Description: 
 Динамічний об'єкт, тип даних відомий при виконанні, містить кортеж змінних
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Containers.Dynamic.Data
 ```cpp 
 class Rem.Core.Containers.Dynamic.Data;
@@ -367,6 +391,9 @@ class Rem.Core.Containers.Dynamic.Data;
 Description: 
 Контейнер даних даного об'єкту
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Containers.Dynamic.Data.ctor
 ```cpp 
 Rem.Core.Containers.Dynamic.Data.ctor(Rem.Core.Containers.Dynamic.IDynamicImpl*)
@@ -415,6 +442,9 @@ class Rem.Core.Containers.Dynamic.IDynamicImpl;
 Description: 
 Інтерфейс динамічного типу
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Containers.Dynamic.IDynamicImpl.Dispose
 ```cpp 
 Rem.Core.Containers.Dynamic.IDynamicImpl.Dispose()
@@ -480,6 +510,9 @@ class Rem.Core.Containers.LINQ.IAssociableCollectionGenericBase;
 Description: 
 Базовий клас для асоціативних колекцій
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Containers.LINQ.ICollectionGenericBase
 ```cpp 
 class Rem.Core.Containers.LINQ.ICollectionGenericBase;
@@ -487,6 +520,9 @@ class Rem.Core.Containers.LINQ.ICollectionGenericBase;
 Description: 
 Базовий клас для загальних колекцій
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Containers.LINQ.IFixedCollectionGenericBase
 ```cpp 
 class Rem.Core.Containers.LINQ.IFixedCollectionGenericBase;
@@ -494,6 +530,9 @@ class Rem.Core.Containers.LINQ.IFixedCollectionGenericBase;
 Description: 
 Базовий клас для фіксованих колекцій
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Containers.LINQ.ILinqBase
 ```cpp 
 class Rem.Core.Containers.LINQ.ILinqBase;
@@ -501,6 +540,9 @@ class Rem.Core.Containers.LINQ.ILinqBase;
 Description: 
 Базовий клас для LINQ контейнерів
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.CStr.Compar)
 ```cpp 
 Rem.Core.CStr.Compar)
@@ -657,6 +699,9 @@ _____
 class Rem.Core.CurrentSettings;
  ``` 
 Description: Сінглтон татичний класс поточних настройок
+Parameters: 
+_____ 
+_____ 
 ### Property: Rem.Core.CurrentSettings.KernelService
 ```cpp 
 property Rem.Core.CurrentSettings.KernelService;
@@ -820,6 +865,9 @@ Description: Розмір резервування дял рядкової зм�
 class Rem.Core.CurrentSettings.SettingsData;
  ``` 
 Description: Дані налаштувань
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.KernelServiceConfig
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.KernelServiceConfig
@@ -830,6 +878,9 @@ Description: Налаштування сервісів ядра
 class Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT;
  ``` 
 Description: Налаштування сервісів ядра
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskSheduler
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskSheduler
@@ -840,6 +891,9 @@ Description: Налаштування планувальника задач
 class Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskShedulerCfgT;
  ``` 
 Description: Налаштування планувальника задач
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskShedulerCfgT.DefaultTimerProximity
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.KernelServiceConfigT.TaskShedulerCfgT.DefaultTimerProximity
@@ -855,6 +909,9 @@ Description: Налаштування менеджера пам'яті
 class Rem.Core.CurrentSettings.SettingsData.MemoryManager;
  ``` 
 Description: Налаштування менеджера пам'яті
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.MemoryManager.DefaultHeap
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.MemoryManager.DefaultHeap
@@ -885,6 +942,9 @@ Description: Куча для помилок
 class Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg;
  ``` 
 Description: Налаштування кучі
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.AdditionalСhecks
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.AdditionalСhecks
@@ -905,6 +965,9 @@ Description: Максимальний розмір кучі
 class Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks;
  ``` 
 Description: Додаткові флаги кучі
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_ARGS_CHECK
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.MemoryManager.HeapCfg.PosibleAdditionalСhecks.HEAP_ARGS_CHECK
@@ -950,6 +1013,9 @@ Description: Налаштування багатопотоковості
 class Rem.Core.CurrentSettings.SettingsData.ThreadingCfg;
  ``` 
 Description: Налаштування багатопотоковості
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.Thread
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.Thread
@@ -960,6 +1026,9 @@ Description: Налаштування потоків
 class Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg;
  ``` 
 Description: Налаштування потоків
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg.StackMaxSize
 ```cpp 
 Rem.Core.CurrentSettings.SettingsData.ThreadingCfg.ThreadCfg.StackMaxSize
@@ -984,6 +1053,9 @@ class Rem.Core.CurrentSettings.StaticSettingsData;
 Description: 
 Статичні налаштування
 
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.StaticSettingsData.KernelExcecutableNamespaceName
 ```cpp 
 Rem.Core.CurrentSettings.StaticSettingsData.KernelExcecutableNamespaceName
@@ -1062,6 +1134,9 @@ Description: Рантайм налаштування
 class Rem.Core.CurrentSettings.VirtualSettingData;
  ``` 
 Description: Налаштування середовища
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.CurrentSettings.VirtualSettingData.CpuCoresCount
 ```cpp 
 Rem.Core.CurrentSettings.VirtualSettingData.CpuCoresCount
@@ -1087,6 +1162,9 @@ Description: Повний NT адресс виконавчого файла яд
 class Rem.Core.DI.DIRegisterService;
  ``` 
 Description: Помилка реєстрації сервісу
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.DI.DIRegisterService.ctor
 ```cpp 
 Rem.Core.DI.DIRegisterService.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, Rem.Core.BaseString<Rem.Core.Memory.ExceptionHeap>&, const type_info &)
@@ -1127,6 +1205,9 @@ Description:
 class Rem.Core.DI.DIResolveException;
  ``` 
 Description: Не можливо розвязати залежності типів для побудови класу
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.DI.DIResolveException.ctor
 ```cpp 
 Rem.Core.DI.DIResolveException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, Rem.Core.BaseString<Rem.Core.Memory.ExceptionHeap>&, const type_info &)
@@ -1167,6 +1248,9 @@ Description:
 class Rem.Core.DI.NonSerelizableType;
  ``` 
 Description: Не можливо серелізувати або десерелізувати даний тип
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.DI.NonSerelizableType.ctor
 ```cpp 
 Rem.Core.DI.NonSerelizableType.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, Rem.Core.BaseString<Rem.Core.Memory.ExceptionHeap>&, const type_info &)
@@ -1209,11 +1293,17 @@ class Rem.Core.Equality;
 Description: 
 Можливі варіанти порівняння
 
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Exceptions.BadCast
 ```cpp 
 class Rem.Core.Exceptions.BadCast;
  ``` 
 Description: Неможливо перетворити тип
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.BadCast.ctor
 ```cpp 
 Rem.Core.Exceptions.BadCast.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1240,6 +1330,9 @@ _____
 class Rem.Core.Exceptions.BadException;
  ``` 
 Description: Некоректний тип помилки
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.BadException.ctor
 ```cpp 
 Rem.Core.Exceptions.BadException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1266,6 +1359,9 @@ _____
 class Rem.Core.Exceptions.BadPureCall;
  ``` 
 Description: Неможливо викликати віртуальну функцію
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.BadPureCall.ctor
 ```cpp 
 Rem.Core.Exceptions.BadPureCall.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1292,6 +1388,9 @@ _____
 class Rem.Core.Exceptions.DivideByZero;
  ``` 
 Description: Ділення на ноль
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.DivideByZero.ctor
 ```cpp 
 Rem.Core.Exceptions.DivideByZero.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1318,6 +1417,9 @@ _____
 class Rem.Core.Exceptions.EndNodeNotDeferencable;
  ``` 
 Description: Ітератор на кінець не є визначеним
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.EndNodeNotDeferencable.ctor
 ```cpp 
 Rem.Core.Exceptions.EndNodeNotDeferencable.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1344,6 +1446,9 @@ _____
 class Rem.Core.Exceptions.Exception;
  ``` 
 Description: Класс базової помилки
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.Exception.ctor
 ```cpp 
 Rem.Core.Exceptions.Exception.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, const Rem.Core.ConstString &)
@@ -1371,6 +1476,9 @@ _____
 class Rem.Core.Exceptions.Exception.ExeptionLocation;
  ``` 
 Description: Місце генерації помилки
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.Exceptions.Exception.ExeptionLocation.File
 ```cpp 
 Rem.Core.Exceptions.Exception.ExeptionLocation.File
@@ -1452,6 +1560,9 @@ _____
 class Rem.Core.Exceptions.IndexOutOfRange;
  ``` 
 Description: Доступ до елемента який знаходится за межею розмірів
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.IndexOutOfRange.ctor
 ```cpp 
 Rem.Core.Exceptions.IndexOutOfRange.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, System.UInt64, System.UInt64)
@@ -1508,6 +1619,9 @@ _____
 class Rem.Core.Exceptions.IntegerOverflowException;
  ``` 
 Description: Цілочисельне переповнення
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.IntegerOverflowException.ctor
 ```cpp 
 Rem.Core.Exceptions.IntegerOverflowException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1534,6 +1648,9 @@ _____
 class Rem.Core.Exceptions.InternalError;
  ``` 
 Description: Внутрішня помилка ядра
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.InternalError.ctor
 ```cpp 
 Rem.Core.Exceptions.InternalError.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1560,6 +1677,9 @@ _____
 class Rem.Core.Exceptions.InteruptException;
  ``` 
 Description: Операцію перервано
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.InteruptException.ctor
 ```cpp 
 Rem.Core.Exceptions.InteruptException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1595,6 +1715,9 @@ _____
 class Rem.Core.Exceptions.InvalidArgumentException;
  ``` 
 Description: Невірний аргумент
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.Exceptions.InvalidArgumentException.ArgNameValue
 ```cpp 
 Rem.Core.Exceptions.InvalidArgumentException.ArgNameValue
@@ -1661,6 +1784,9 @@ _____
 class Rem.Core.Exceptions.InvalidFormatException;
  ``` 
 Description: Невірний формат
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.InvalidFormatException.ctor
 ```cpp 
 Rem.Core.Exceptions.InvalidFormatException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1687,6 +1813,9 @@ _____
 class Rem.Core.Exceptions.InvalidHandleUsage;
  ``` 
 Description: Використання невалідного дескриптора
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.InvalidHandleUsage.ctor
 ```cpp 
 Rem.Core.Exceptions.InvalidHandleUsage.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1713,6 +1842,9 @@ _____
 class Rem.Core.Exceptions.InvalidTypeException;
  ``` 
 Description: Некоректний тип
+Parameters: 
+_____ 
+_____ 
 ### Property: Rem.Core.Exceptions.InvalidTypeException.ActuallyType
 ```cpp 
 property Rem.Core.Exceptions.InvalidTypeException.ActuallyType;
@@ -1769,6 +1901,9 @@ _____
 class Rem.Core.Exceptions.KeyAllredyExistException;
  ``` 
 Description: Ключ вжк існує
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.KeyAllredyExistException.ctor
 ```cpp 
 Rem.Core.Exceptions.KeyAllredyExistException.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1795,6 +1930,9 @@ _____
 class Rem.Core.Exceptions.NotImplemented;
  ``` 
 Description: Невірний формат
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.NotImplemented.ctor
 ```cpp 
 Rem.Core.Exceptions.NotImplemented.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -1849,6 +1987,9 @@ class Rem.Core.Exceptions.NullPointException;
  ``` 
 Description: Помилка доступу до комірки пам'яті
 Буває трьох варінтів - Read	- спроба прочитати за неіснуючим адресом - Write	- спроба записати за неіснуючим адресом - Execute - спроба виконати команду за неіснуючим адресомТому помилка містить інформацію про тип доступу та адресс який пробували використати
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.Exceptions.NullPointException.Addr
 ```cpp 
 Rem.Core.Exceptions.NullPointException.Addr
@@ -1917,11 +2058,17 @@ Description: Тип доступу який згенерував помилку
 class Rem.Core.Exceptions.NullPointException.Types;
  ``` 
 Description:  Можливі варіанти помилки
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Exceptions.OutOfMemory
 ```cpp 
 class Rem.Core.Exceptions.OutOfMemory;
  ``` 
 Description: Недостатньо оперативної пам'яті для операції
+Parameters: 
+_____ 
+_____ 
 ### Field: Rem.Core.Exceptions.OutOfMemory.AllocatedBefore
 ```cpp 
 Rem.Core.Exceptions.OutOfMemory.AllocatedBefore
@@ -2008,6 +2155,9 @@ Description: Кількість байт які пробували виділи�
 class Rem.Core.Exceptions.StringToLong;
  ``` 
 Description: Рядок має завеликий розмір
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exceptions.StringToLong.ctor
 ```cpp 
 Rem.Core.Exceptions.StringToLong.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, System.UInt64)
@@ -2054,6 +2204,9 @@ _____
 class Rem.Core.Exeptions.AlredyExecute;
  ``` 
 Description: Делегат в процесі виконання
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exeptions.AlredyExecute.ctor
 ```cpp 
 Rem.Core.Exeptions.AlredyExecute.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -2080,6 +2233,9 @@ _____
 class Rem.Core.Exeptions.CantGetResultNotInvokedFunction;
  ``` 
 Description: Спроба отримати результат не виконаної ще функції
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exeptions.CantGetResultNotInvokedFunction.ctor
 ```cpp 
 Rem.Core.Exeptions.CantGetResultNotInvokedFunction.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -2106,6 +2262,9 @@ _____
 class Rem.Core.Exeptions.TryReStartDelegate;
  ``` 
 Description: Спроба повторно запусти вже виконаний делегат або який виконується зараз
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Exeptions.TryReStartDelegate.ctor
 ```cpp 
 Rem.Core.Exeptions.TryReStartDelegate.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -2134,6 +2293,9 @@ class Rem.Core.IDisposable;
 Description: 
 Інтерфейс звільнення ресурсів з класу з підрахунком силок
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.IDisposable.Dispose
 ```cpp 
 Rem.Core.IDisposable.Dispose()
@@ -2150,6 +2312,9 @@ _____
 class Rem.Core.Interlocked;
  ``` 
 Description: Набір атомарних InterlockedXXX операцій
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Interlocked.CompareAndSwap
 ```cpp 
 Rem.Core.Interlocked.CompareAndSwap(System.Int16|System.Runtime.CompilerServices.IsVolatile&, System.Int16, System.Int16)
@@ -2420,6 +2585,9 @@ _____
 class Rem.Core.Memory.BasicHeap;
  ``` 
 Description: Базовий клас куч
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Memory.BasicHeap.AllignedAllocate
 ```cpp 
 Rem.Core.Memory.BasicHeap.AllignedAllocate(System.UInt64, System.UInt64)
@@ -2629,6 +2797,9 @@ _____
 class Rem.Core.Memory.Heap;
  ``` 
 Description: Загальна куча
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Memory.Heap.AllignedAllocate
 ```cpp 
 Rem.Core.Memory.Heap.AllignedAllocate(System.UInt64, System.UInt64)
@@ -2742,6 +2913,9 @@ _____
 class Rem.Core.Memory.SensitiveDataHeap;
  ``` 
 Description: Захищена куча
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Memory.SensitiveDataHeap.AllignedAllocate
 ```cpp 
 Rem.Core.Memory.SensitiveDataHeap.AllignedAllocate(System.UInt64, System.UInt64)
@@ -2843,6 +3017,9 @@ _____
 class Rem.Core.NewCTTI.TypeTraits.EType;
  ``` 
 Description: Перелік категорій типів
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.NextLine
 ```cpp 
 Rem.Core.NextLine()
@@ -2859,6 +3036,9 @@ class Rem.Core.RefCountT;
 Description: 
 Атомарний лічильник. Використовує функції InterlockedXXX
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.RefCountT.--
 ```cpp 
 Rem.Core.RefCountT.--(System.Int32)
@@ -2956,6 +3136,9 @@ Description:
 class Rem.Core.Reflection.InvlaidDynamicFunctionArgs;
  ``` 
 Description: Неможливо викликати динамічну функцію з даним набором аргументів
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Reflection.InvlaidDynamicFunctionArgs.ctor
 ```cpp 
 Rem.Core.Reflection.InvlaidDynamicFunctionArgs.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -2982,6 +3165,9 @@ _____
 class Rem.Core.Reflection.NonSerelizableType;
  ``` 
 Description: Не можливо серелізувати або десерелізувати даний тип
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Reflection.NonSerelizableType.ctor
 ```cpp 
 Rem.Core.Reflection.NonSerelizableType.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, Rem.Core.BaseString<Rem.Core.Memory.ExceptionHeap>&, const type_info &)
@@ -3024,6 +3210,9 @@ class Rem.Core.Services.CoreLogger;
 Description: 
 Сервіс логера ядра, надає можливість запису в лог і проглядання записів
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Services.CoreLogger.ReadLog
 ```cpp 
 Rem.Core.Services.CoreLogger.ReadLog()
@@ -3052,6 +3241,9 @@ _____
 class Rem.Core.Threading.DedlockExpected;
  ``` 
 Description: Взаємне блокування
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.DedlockExpected.ctor
 ```cpp 
 Rem.Core.Threading.DedlockExpected.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -3079,6 +3271,9 @@ class Rem.Core.Threading.Event;
  ``` 
 Description: Подія NT
 Об'єкт синхронізації потоків
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.Event.ctor
 ```cpp 
 Rem.Core.Threading.Event.ctor(const Rem.Core.BaseString<Rem.Core.Memory.Heap> &, System.Boolean)
@@ -3125,6 +3320,9 @@ _____
 class Rem.Core.Threading.Event.event_data;
  ``` 
 Description: Дані події
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.Event.event_data.ctor
 ```cpp 
 Rem.Core.Threading.Event.event_data.ctor(System.Boolean, const Rem.Core.BaseString<Rem.Core.Memory.Heap> &)
@@ -3225,6 +3423,9 @@ _____
 class Rem.Core.Threading.InvalidThread;
  ``` 
 Description: Неіснуючий потік або він не є керований через Core
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.InvalidThread.ctor
 ```cpp 
 Rem.Core.Threading.InvalidThread.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64, System.UInt64)
@@ -3271,6 +3472,9 @@ _____
 class Rem.Core.Threading.InvalidThreadObj;
  ``` 
 Description: Не валідний об'єкт потоку
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.InvalidThreadObj.ctor
 ```cpp 
 Rem.Core.Threading.InvalidThreadObj.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -3311,6 +3515,9 @@ class Rem.Core.Threading.SheduledJob;
 Description: 
 Задача в планувальнику задач
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.SheduledJob.ctor
 ```cpp 
 Rem.Core.Threading.SheduledJob.ctor(Rem.Core.Threading.SheduledJob.Data*)
@@ -3330,6 +3537,9 @@ class Rem.Core.Threading.SheduledJob.Data;
 Description: 
 Внутрішня структура задачі
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.SheduledJob.Data.ctor
 ```cpp 
 Rem.Core.Threading.SheduledJob.Data.ctor(Rem.Core.Threading.ITask*, Rem.Core.Threading.TaskSheduler.Data*)
@@ -3582,6 +3792,9 @@ class Rem.Core.Threading.SheduledJobBuilder;
 Description: 
 Проміжний клас для побудови задачі
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.SheduledJobBuilder.Cancel
 ```cpp 
 Rem.Core.Threading.SheduledJobBuilder.Cancel()
@@ -3744,6 +3957,9 @@ Description:
 class Rem.Core.Threading.SRWLock;
  ``` 
 Description: Примітив синхронізації який дозволяє одночасне читання і есклюзивний запис
+Parameters: 
+_____ 
+_____ 
 ### class\struct Rem.Core.Threading.TaskSheduler
 ```cpp 
 class Rem.Core.Threading.TaskSheduler;
@@ -3751,6 +3967,9 @@ class Rem.Core.Threading.TaskSheduler;
 Description: 
 Планувальник задач на базі пулу потоків(виконує задачі в задану дату і час)
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.TaskSheduler.#ctor
 ```cpp 
 Rem.Core.Threading.TaskSheduler.#ctor()
@@ -3923,6 +4142,9 @@ Description:
 class Rem.Core.Threading.ThreadableAlredyStarted;
  ``` 
 Description: Запуск запущеного об'єкта
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.Threading.ThreadableAlredyStarted.ctor
 ```cpp 
 Rem.Core.Threading.ThreadableAlredyStarted.ctor(const Rem.Core.ConstAString &, const Rem.Core.ConstAString &, System.UInt64)
@@ -4075,6 +4297,9 @@ class Rem.Core.UUID;
 Description: 
 Клас унікального ідентифікатора UUID сумісного з GUID який використовується в ядрі Windows
 
+Parameters: 
+_____ 
+_____ 
 ### Method Rem.Core.UUID.#ctor
 ```cpp 
 Rem.Core.UUID.#ctor()
